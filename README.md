@@ -1,11 +1,13 @@
-# HandsOn
+# HandsOn Client
 
 ## 📌 Project Overview
 HandsOn is a community-driven social volunteering platform designed to connect individuals with meaningful social impact opportunities. Users can discover and join volunteer-driven events, post requests for community help, form teams for large-scale initiatives, and track their impact. The platform encourages social responsibility, collaboration, and recognition of contributions.
 
-## Git Repository
+## 📚 Git Repository
 
-[Server Git](<https://github.com/aaliahammedpriom/hands-on-volunteering-platform-server>)
+[Server Git](https://github.com/aaliahammedpriom/hands-on-volunteering-platform-server)
+
+[Client Git](https://github.com/aaliahammedpriom/hands-on-volunteering-platform-client)
 
 ## 🛠 Technologies Used
 - **Frontend**: React.js, Tailwind CSS, DaisyUI
@@ -13,7 +15,7 @@ HandsOn is a community-driven social volunteering platform designed to connect i
 - **Forms**: React Hook Form
 - **Icons**: Lucide React
 - **API Requests**: Axios
-- **Authentication**: JWT && Firebase
+- **Authentication**: JWT & Firebase
 
 ## ✨ Features
 - User registration and profile management
@@ -30,27 +32,26 @@ HandsOn is a community-driven social volunteering platform designed to connect i
 - **Teams** (Bonus): Manages public and private team memberships
 - **Impact Logs** (Bonus): Records volunteer hours and contributions
 
-## ⚙ Setup  Client Side Instructions
+## ⚙ Setup Client Side Instructions
 1. **Clone the client repository**:
    ```sh
    git clone https://github.com/aaliahammedpriom/hands-on-volunteering-platform-client.git
-   cd handson-client
+   cd hands-on-client
    ```
-``
 2. **Install dependencies**:
    ```sh
    npm install
    ```
 3. **Configure environment variables**:
-   - Create a `.env` file in the root directory and add Firebase configuration details
-   ```env
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-   ```
+   - Create a `.env` file in the root directory and add Firebase configuration details:
+     ```env
+     VITE_API_KEY=your-api-key
+     VITE_AUTH_DOMAIN=your-auth-domain
+     VITE_PROJECT_ID=your-project-id
+     VITE_STORAGE_BUCKET=your-storage-bucket
+     VITE_MESSAGING_SENDER_ID=your-messaging-sender-id
+     VITE_APP_ID=your-app-id
+     ```
 4. **Run the development server**:
    ```sh
    npm run dev
@@ -101,7 +102,6 @@ The frontend interacts with a RESTful backend built with Express.js and MongoDB.
 - `POST /teamdiscussion` – Create a discussion post in a team (requires authentication)
 - `GET /teamdiscussion/:id` – Fetch discussion posts by team ID (requires authentication)
 
-
 ## 🚀 Running the Project
 ### Locally
 ```sh
@@ -116,4 +116,3 @@ The build files will be generated in the `dist/` folder and can be deployed to a
 ---
 📢 Contributions are welcome! If you'd like to improve HandsOn, feel free to submit a pull request. 🎉
 
-# hands-on-volunteering-platform-client
