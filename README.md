@@ -3,6 +3,10 @@
 ## 📌 Project Overview
 HandsOn is a community-driven social volunteering platform designed to connect individuals with meaningful social impact opportunities. Users can discover and join volunteer-driven events, post requests for community help, form teams for large-scale initiatives, and track their impact. The platform encourages social responsibility, collaboration, and recognition of contributions.
 
+## Git Repository
+
+[Server Git](<https://github.com/aaliahammedpriom/hands-on-volunteering-platform-server>)
+
 ## 🛠 Technologies Used
 - **Frontend**: React.js, Tailwind CSS, DaisyUI
 - **Routing**: React Router
@@ -26,12 +30,13 @@ HandsOn is a community-driven social volunteering platform designed to connect i
 - **Teams** (Bonus): Manages public and private team memberships
 - **Impact Logs** (Bonus): Records volunteer hours and contributions
 
-## ⚙ Setup Instructions
-1. **Clone the repository**:
+## ⚙ Setup  Client Side Instructions
+1. **Clone the client repository**:
    ```sh
    git clone https://github.com/aaliahammedpriom/hands-on-volunteering-platform-client.git
    cd handson-client
    ```
+``
 2. **Install dependencies**:
    ```sh
    npm install
@@ -39,8 +44,12 @@ HandsOn is a community-driven social volunteering platform designed to connect i
 3. **Configure environment variables**:
    - Create a `.env` file in the root directory and add Firebase configuration details
    ```env
-   REACT_APP_FIREBASE_API_KEY=your_api_key
-   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
    ```
 4. **Run the development server**:
    ```sh
